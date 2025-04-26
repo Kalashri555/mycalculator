@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: burlywood;
+  background-color: #f0f2f5; /* soft background */
   display: grid;
   place-content: center;
   font-family: "Roboto", sans-serif;
@@ -21,12 +21,10 @@ body {
 .container {
   height: 80vh;
   width: 50vh;
-  background-color: black;
+  background-color: #1c1c1e; /* dark container */
   border-radius: 1rem;
   padding: 1rem;
-  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.5);
 }
 
 .wrapper {
@@ -40,42 +38,46 @@ body {
 
 .screen {
   grid-column: 1 / -1;
-  color: white;
+  color: #ffffff;
   text-align: right;
   padding: 0.5rem;
   font-size: 4rem;
   overflow: hidden;
+  background-color: #2c2c2e; /* darker screen */
+  border-radius: 0.5rem;
 }
 
 .btn {
   display: grid;
   place-content: center;
-  background-color: rgb(54, 52, 52);
+  background-color: #3a3a3c; /* nice dark gray */
   border-radius: 50%;
   color: white;
   cursor: pointer;
   font-weight: bold;
+  transition: 0.3s;
 }
 .btn:hover {
-  background-color: gray;
+  background-color: #5c5c5e;
 }
 
 .light-gray {
-  background-color: gray;
-  color: black;
+  background-color: #d4d4d2;
+  color: #1c1c1e;
 }
 
 .light-gray:hover {
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .orange {
-  background-color: orange;
+  background-color: #ff9500; /* modern orange */
+  color: white;
 }
 
 .orange:hover {
-  background-color: white;
-  color: orange;
+  background-color: #ffd6a0;
+  color: #ff9500;
 }
 
 .zero {
@@ -84,4 +86,5 @@ body {
   place-content: unset;
   align-items: center;
   padding-left: 2rem;
+  background-color: #3a3a3c;
 }
